@@ -1,0 +1,9 @@
+$("#contenedor").on({
+    mousemove:function(evento){
+        console.log(evento)
+        $(".imagen").css({
+            "top":-(evento.pageY-500)/7+"px",
+            "left":-(evento.pageX-500)/7+"px",
+        })
+    }
+})
